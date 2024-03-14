@@ -1,0 +1,52 @@
+:root {
+    --dark: #160701;
+    --light: #f5bba8;
+    --accent: #5090f0;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+input {
+    all: unset;
+    margin: 0 10px;
+    background-color: var(--dark);
+    color: var(--light);
+    max-width: 80px;
+    padding: 10px;
+}
+
+button {
+    all: unset;
+    background-color: var(--accent);
+    color: var(--dark);
+    margin: 8px;
+    padding: 16px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: filter .15s ease-in-out;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    filter: brightness(90%);
+}
+
+#output {
+    background-color: var(--accent);
+    color: var(--light);
+    padding: 20px;
+    font-size: large;
+    width: fit-content;
+}
