@@ -1,52 +1,56 @@
+/* Define color theme */
 :root {
     --dark: #160701;
     --light: #f5bba8;
     --accent: #5090f0;
 }
 
+/* Main page */
 body {
-    background-color: var(--light);
-    color: var(--dark);
-    font-family: sans-serif;
-    max-width: 1000px;
-    margin: 0 auto;
+    background-color: var(--light); /* Page background color */
+    color: var(--dark); /* Page text color */
+    font-family: sans-serif; /* Page font color */
+    max-width: 1000px; /* Width of page */
+    margin: 0 auto; /* Centers page */
 }
 
 input {
-    all: unset;
-    margin: 0 10px;
-    background-color: var(--dark);
-    color: var(--light);
-    max-width: 80px;
-    padding: 10px;
+    all: unset; /* Clears default styles */
+    margin: 0 10px; /* Spacing on left and right of element */
+    background-color: var(--dark); /* Background color */
+    color: var(--light); /* Text color */
+    max-width: 80px; /* Width of element */
+    padding: 10px; /* Space between content and edge */
 }
 
 button {
-    all: unset;
-    background-color: var(--accent);
-    color: var(--dark);
-    margin: 8px;
-    padding: 16px;
-    font-size: larger;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
+    all: unset; /* Clears default styles */
+    background-color: var(--accent); /* Background color */
+    color: var(--dark); /* Text color */
+    margin: 8px; /* Outer spacing on all sides */
+    padding: 16px; /* Inner spacing on all sides */
+    font-size: larger; /* Increases font size */
+    font-weight: bold; /* Makes font bold */
+    border-radius: 8px; /* Adds rounded corners */
+    cursor: pointer; /* Turns cursor into pointer when hovering */
 
-    transition: filter .15s ease-in-out;
+    transition: filter .15s ease-in-out; /* Makes the filter property animate */
 }
 
+/* Button when hovered over */
 button:hover {
-    filter: brightness(110%);
+    filter: brightness(110%); /* Makes entire element 10% lighter */
 }
 
+/* Button when being clicked */
 button:active {
-    filter: brightness(90%);
+    filter: brightness(90%); /* Makes entire element 10% darker */
 }
 
 #output {
-    background-color: var(--accent);
-    color: var(--light);
-    padding: 20px;
-    font-size: large;
-    width: fit-content;
+    background-color: var(--accent); /* Background color */
+    color: var(--light); /* Text color */
+    padding: 20px; /* Inner spacing on all sides */
+    font-size: large; /* Increases font size */
+    width: fit-content; /* Sets width to the width of text inside of the element */
 }
